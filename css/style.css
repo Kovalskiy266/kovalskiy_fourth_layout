@@ -1,0 +1,63 @@
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  height: 2000px; }
+
+.container {
+  max-width: 1220px;
+  width: 100%;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto; }
+
+header {
+  font-family: "open_sansregular";
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: green;
+  padding: 0 15px;
+  margin-bottom: 100px; }
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto; }
+
+.logo_oxit {
+  margin-top: 10px;
+  margin-bottom: 7px; }
+
+.menu {
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 0px; }
+
+.menu ul {
+  display: flex; }
+
+.menu ul li {
+  margin-left: 40px;
+  list-style-type: none; }
+
+.description_block {
+  margin-top: auto; }
+
+.description_text {
+  max-width: 545px; }
+
+.description_text p {
+  font-size: 16px; }
+
+.description_text h1 {
+  color: #333333;
+  margin-bottom: 114px; }
+
+.afefsdf {
+  font-family: 'Courier New', Courier, monospace; }
