@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Fourth layout</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <meta name="viewport" content="width=device-width">
     
 </head>
@@ -20,29 +20,76 @@
                 <div class="menu">
                      <ul>
                          <li>Головна</li>
-                        <li>Програма курсу</li>
+                        <li><a href="#first_slider">Програма курсу</a></li>
                         <li>ВІдгуки про курс</li>
                         <li>Відео</li>
                         <li>Ментори</li>
-                        <li>Подати заяву</li>
+                        <li><span><a href="#description">Подати заяву</a></span></li>
                     </ul>
                 </div>
                 </div>
                 </div>
         </header>
 
+        <div class="description" id="description">
+            <div class="container">
+                <div class="description_content">
+                    <div class="description_block">
+                        <div class="description_text">
+                            <h1>Курси програмування у Луцьку</h1>
+                                <p>Сфера IT розвивається максимально швидко. Зараз дуже популярно здобувати освіту, що пов'язана з IT. Існує лише одна проблема-брак дійсно кваліфікованих спеціалістів в Україні. Під час навчання в університеті ми отримуємо мало практики і "живих" реальних кейсів. IT школа OxIT створила таку методику навчання, при якій за короткий час ви отримаєте необхідні знання, щоб стати IT спеціалістом. Чекаємо вас на наших курсах з програмування в Луцьку. Старт наступного курсу 3 серпня.</p>
+                        <!-- <img src="images/viktor.png">    -->
+                        </div>
+                        </div>
+                        <div class="first_form">
+                            <h2>Зареєструватись на курси</h2>
+                            <form>
+                                <p>Ім'я<span>*</span></p>
+                                <input type="text" placeholder = "Ім'я" name="first_name" class="input">     
+                                <p>Прізвище<span>*</span></p>
+                                <input type="text" name="last_name" placeholder="Прізвище" class="input">  
+                                <p>Мене більше цікавить<span>*</span></p>
+                                <input type="text" placeholder = "developer or QA" name="last_name" class="input">    
+                                <p>Телефон<span>*</span></p>
+                                <input type="number" placeholder="Номер телефону" name="phone" class="input">
+                                <p>Email<span>*</span></p>
+                                <input type="email" placeholder="Email" name="email" class="input" required>
+                                <div class="checkbox">
+                                     <input type="checkbox" id="consent"><label for="consent">&nbsp;Я погоджуюся із <a href="#">Політикою конфідіеційності</a><span>*</span></label>
+                                </div>
+                                <input type="submit" value="Зареєструвати зараз" name = "reg">
+                            </form>
+                        </div>
 
-        <div class="container">
-            <div class="description_block">
-                <div class="description_text">
-                    sdfsdfsdddddddsdf
-                    sdfsdfsdfsdfsdfsdfsdfsd
-                    fsfsgdfgrbfgbvcxvdvfd<br>
-                    <img src="images/viktor.png">   
-                </div>
 
             </div>
         </div>
         </div>
+        </div>
+
+        <div class="slider_title">
+            <div class="title">Курс «Розробка сайтів»</div>
+        </div>
+        </div>
+
+        <!-- ------------------------- -->
+        <div class = first_slider id="first_slider">
+            <div class="container">
+                    <div class="slider">
+                        <div class="slider_block">
+                            <div class="center_img">
+                                <img src="images/icons/course-icon-1.png" alt="">
+                            </div>
+                            <span>Розробка сайтів на WordPress</span>
+                            <div class="line"></div>
+                            Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress навчишся створювати сайти різної складності: від блогів до інтернет магазинів. Всі знання закріпиш за допомогою тестових завдань.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------- -->
+
      </body>
      </html>
