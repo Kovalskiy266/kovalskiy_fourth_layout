@@ -5,7 +5,11 @@
     <title>Fourth layout</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
     <meta name="viewport" content="width=device-width">
+    <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src = "js/slick.min.js"></script>
+    <script src = "js/script.js"></script>
     
 </head>
 
@@ -76,20 +80,145 @@
         <div class = first_slider id="first_slider">
             <div class="container">
                     <div class="slider">
+                        <!-- ----------------------- -->
                         <div class="slider_block">
                             <div class="center_img">
                                 <img src="images/icons/course-icon-1.png" alt="">
                             </div>
                             <span>Розробка сайтів на WordPress</span>
                             <div class="line"></div>
-                            Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress навчишся створювати сайти різної складності: від блогів до інтернет магазинів. Всі знання закріпиш за допомогою тестових завдань.
+                            <div class="text">Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress навчишся створювати сайти різної складності: від блогів до інтернет магазинів. Всі знання закріпиш за допомогою тестових завдань.</div>
+                        </div>
+                        <!-- ---------------------------->
+                        <div class="slider_block">
+                            <div class="center_img">
+                                <img src="images/icons/course-icon-2.png" alt="">
+                            </div>
+                            <span>Розробка сайтів на Drupal8</span>
+                            <div class="line"></div>
+                            <div class="text"> Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою, ти пізнаєш секрети основних та додаткових Drupal-модулів (Views, Rules, Panels, Devel, Paragraph та багато інших).</div>
+                        </div>
+                        <!-- ------------------------- -->
+                        <div class="slider_block">
+                            <div class="center_img">
+                                <img src="images/icons/course-icon-3.png" alt="">
+                            </div>
+                            <span>Ознайомлення з тестуванням</span>
+                            <div class="line"></div>
+                            <div class="text">Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ.Також QA-спеціаліст розкаже про види тестування(функціональне, регресивне, системне, тестування швидкодії тощо).</div>
+                          <!-- ------------------------- -->
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            <!-- ------------------------- -->
+
+            <div class="course">
+                <div class="container">
+                    <div class="course_content">
+
+                        <!-- --------------------------- -->
+                        <div class="course_block">
+                            <div class="center_img"> 
+                                <img src="images/icons/statistic-icon-1.png" alt="" title="">
+                            </div>
+                            <div class="text_number">25</div>
+                            <div class="text">курсів організовано</div>
+                        </div>
+
+                         <!-- --------------------------- -->
+
+                         <div class="course_block">
+                            <div class="center_img"> 
+                                <img src="images/icons/statistic-icon-2.png" alt="" title="">
+                            </div>
+                            <div class="text_number">836</div>
+                            <div class="text">годин занять проведено</div>
+                        </div>
+
+                         <!-- --------------------------- -->
+
+                         <div class="course_block">
+                            <div class="center_img"> 
+                                <img src="images/icons/statistic-icon-3.png" alt="" title="">
+                            </div>
+                            <div class="text_number">500</div>
+                            <div class="text">студентів навчено</div>
+                        </div>
+                        
+                         <!-- --------------------------- -->
+
+                          <div class="course_block">
+                            <div class="center_img"> 
+                                <img src="images/icons/statistic-icon-4.png" alt="" title="">
+                            </div>
+                            <div class="text_number">120</div>
+                            <div class="text">випускників курсів працевлаштовано</div>
+                        
+                        </div> 
+                        
+                         <!-- --------------------------- -->
+                    
+                </div>
+            </div>
+            </div>
+            <!-- ----------------------------------------------------- -->
+            <div class="container_what_say_students">
+                <div class="container">
+                    <div class="what_say_students">
+                        Що кажуть студенти наших курсів:
+                    </div>
+                </div>
+            </div>
+            <!-- Слайдер -- відгуки студентів -->
+            <div class="container_second_slider">
+                <div class="container">
+                    <div class="second_slider">
+                        <div class="content_second_slider">
+                            <div class ="text_second_slider">
+                                <div class="text">
+                                    <img src="images/quote-left-solid.png" alt="" class="left_quote">
+                                    <img src="images/quote-right-solid.png" alt="" class="right_quote">
+                                            <p>  Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу сказати що Drupal та OxIT повністю змінили моє життя.</p>
+                            </div>
+                        </div>
+                            <div class="name_student">
+                                <p><b>Коля</b><br><span>Drupal-девелопер</span></p>
+                            </div>
+                        </div>
+                        <!-- ------------------------------------- -->
+                        <div class="content_second_slider">
+                            <div class ="text_second_slider">
+                                <div class="text">
+                                    <img src="images/quote-left-solid.png" alt="" class="left_quote">
+                                    <img src="images/quote-right-solid.png" alt="" class="right_quote">
+                                            <p>  Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу сказати що Drupal та OxIT повністю змінили моє життя.</p>
+                            </div>
+                        </div>
+                            <div class="name_student">
+                                <p><b>Коля</b><br><span>Drupal-девелопер</span></p>
+                            </div>
+                        </div>
+                        <!-- ----------------------------------------------- -->
+                        <div class="content_second_slider">
+                            <div class ="text_second_slider">
+                                <div class="text">
+                                    <img src="images/quote-left-solid.png" alt="" class="left_quote">
+                                    <img src="images/quote-right-solid.png" alt="" class="right_quote">
+                                            <p>  Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу сказати що Drupal та OxIT повністю змінили моє життя.</p>
+                            </div>
+                        </div>
+                            <div class="name_student">
+                                <p><b>Коля</b><br><span>Drupal-девелопер</span></p>
+                            </div>
+                        </div>
+                </div>
+            </div>
         </div>
-
-        <!-- ------------------------- -->
-
-     </body>
+    </body>
      </html>
+
+
+     

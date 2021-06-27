@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'open_sansextrabold_italic';
+  src: url("fonts/OpenSans/opensans-extrabolditalic-webfont.woff2") format("woff2"), url("fonts/OpenSans/opensans-extrabolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .wrapper {
   display: flex;
   min-height: 100%;
@@ -64,7 +70,8 @@ header {
   float: right;
   display: block;
   word-break: break-all;
-  margin-top: auto; }
+  margin-top: auto;
+  font-family: "open_sansextrabold_italic"; }
   .description_text h1 {
     font-weight: bolder; }
   .description_text p {
@@ -149,7 +156,8 @@ a {
 
 .slider {
   padding: 0px 1.5em 6em;
-  background-color: green; }
+  background-color: green;
+  display: flex; }
 
 .center_img {
   margin-right: auto;
@@ -175,3 +183,56 @@ a {
     margin-top: 0.95em; }
   .slider_block p {
     font-family: 16px; }
+  .slider_block .text {
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 0px 20px;
+    text-align: center;
+    line-height: 22px;
+    color: #c7c7c7; }
+
+.course {
+  width: 100%;
+  background-color: #3498db; }
+
+.course_content {
+  display: flex;
+  width: 100%;
+  flex-direction: wrap;
+  flex-wrap: wrap;
+  padding: 5.6em 4.7em 5em 4.7em; }
+
+.course_block {
+  display: flex;
+  max-width: 290px;
+  flex-direction: column;
+  color: #ffffff;
+  border: 2px solid red; }
+  .course_block .center_img {
+    margin-bottom: 2.5em; }
+  .course_block .text_number {
+    font-size: 28px;
+    font-weight: bolder;
+    color: #fbfbfc;
+    margin-bottom: 1.3em;
+    text-align: center; }
+  .course_block .text {
+    font-size: 16px;
+    color: #fbfbfc;
+    text-align: center; }
+
+.container_second_slider {
+  width: 100%;
+  background-color: #ffffff; }
+
+.what_say_students {
+  margin: 0 auto;
+  text-align: center;
+  color: #333333;
+  font-size: 34px;
+  text-decoration: none; }
+
+.container_what_say_students {
+  width: 100%;
+  background-color: #ffffff;
+  margin: 65px 0 5px; }
