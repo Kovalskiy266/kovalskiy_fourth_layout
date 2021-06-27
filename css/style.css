@@ -236,3 +236,26 @@ a {
   width: 100%;
   background-color: #ffffff;
   margin: 65px 0 5px; }
+
+.video_container {
+  width: 100%;
+  background-color: #f7f7f7;
+  padding-top: 4.7em; }
+
+.video_content {
+  display: flex;
+  flex-direction: column; }
+
+.video_title {
+  color: #333;
+  font-size: 34px;
+  margin: 0 auto;
+  margin-bottom: 1.6em; }
+
+.video_text {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; }
+
+.video {
+  margin: 1.9em auto 4.1em auto; }

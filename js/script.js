@@ -3,11 +3,11 @@ $(document).ready(function(){
     $('.second_slider').slick({
         arrows: false,
         dots: true,
-        // autoplay: true,
+        autoplay: true,
         infinite: true, 
-        // autoplaySpeed: 4000,
+        autoplaySpeed: 10000,
         // pauseOnHover: false,
-        // fade: true,
+        fade: true,
         // draggable: false,
         // pauseOnFocus: false,
         // pauseOnDotsHover: false,
@@ -15,3 +15,6 @@ $(document).ready(function(){
         // waitForAnimate: false
     });
 });
+
+$(document).ready(function(){
+    $('.thirth_slider').slick({
