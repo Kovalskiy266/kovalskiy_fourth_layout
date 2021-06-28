@@ -1,10 +1,23 @@
 .second_slider {
   width: 100%; }
 
+.thirth_slider {
+  width: 100%;
+  min-width: 0;
+  padding-bottom: 3.8em; }
+
 .content_second_slider {
   text-align: center;
   padding-bottom: 6.9em;
-  padding-top: 1.6em; }
+  padding-top: 1.6em;
+  z-index: -100; }
+
+.content_thirth_slider {
+  text-align: center;
+  display: flex;
+  min-width: 0;
+  padding-left: 4.4em;
+  padding-top: 2.5em; }
 
 .text_second_slider {
   font-size: 16px;
@@ -51,40 +64,55 @@
       width: 100%;
       height: 100%; }
 
-.our_mentors_container {
+.our_mentors_title_container {
   width: 100%;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding-top: 4.7em; }
 
 .our_mentors_title {
   font-size: 34px;
   color: #333;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: "OpenSans-Regular", OpenSans, sans-serif; }
 
-.content_thirth_slider {
-  display: flex;
-  padding-left: 4.4em;
-  padding-top: 2.5em;
-  padding-bottom: 2em; }
+.our_mentors_container {
+  width: 100%;
+  background-color: #ffffff; }
 
 .text_thirth_slider {
   line-height: 1.6;
   font-family: "OpenSans-Light", OpenSans, sans-serif;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
   color: #888;
   margin-left: 100px; }
+  .text_thirth_slider .line {
+    max-width: 670px;
+    width: 100%;
+    background-color: #bdbdbd;
+    height: 1px;
+    margin-bottom: 1.3em; }
   .text_thirth_slider p {
-    margin: 0 0 10px; }
+    text-align: left;
+    margin: 0 0 10px;
+    max-width: 670px;
+    width: 100%; }
+
+.name_mentors {
+  margin-right: auto;
+  margin-bottom: 10px;
+  font-family: "OpenSans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #3498db; }
 
 .slick-list {
   overflow: hidden; }
 
 .slick-track {
   display: flex; }
-
-.slick-arrow {
-  display: none;
-  font-size: 0; }
 
 .second_slider .slick-dots {
   display: flex;
@@ -104,4 +132,24 @@
   border: none; }
 
 .slick-dots li.slick-active button {
+  background-color: #666666; }
+
+.thirth_slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.thirth_slider .slick-dots li {
+  list-style-type: none;
+  margin-right: 10px; }
+
+.thirth_slider .slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #b3b3b3;
+  border-radius: 50%;
+  border: none; }
+
+.thirth_slider .slick-dots li.slick-active button {
   background-color: #666666; }

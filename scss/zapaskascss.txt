@@ -34,9 +34,6 @@
 
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
 @font-face {
     font-family: 'open_sans_semibold';
     src: url('fonts/OpenSans-SemiBold.woff2') format('woff2'),
@@ -49,55 +46,8 @@
 
 }
 
-@media (max-width:1220px){
-    .container{
-        max-width: 970px;
-    }
-}
-
-
-@media (max-width:992px){
-    .container{
-        max-width: 750px;
-    }
-    .description_content{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .description_block{
-        margin: 0 auto;
-        width: 100%;
-        
-        .description_text{
-            h1{
-                font-size: 24px;
-                color: darkred;
-                text-align: center;
-                margin: 35px auto 20px auto;
-                padding: 0 20px;
-            }
-            p{
-                padding-left: 20px;
-                padding-right: 20px;
-                box-sizing: border-box;
-                width: 100%;
-            }
-
-        }
-    }
-}
-
-
-@media (max-width:767px){
-    .container{
-        max-width: none;
-        .header_content{
-            color:darkgreen;
-        }
-    }
-
-
+.asdasd{
+    font-family: sans-serif;
 }
 
 .wrapper
@@ -133,17 +83,6 @@ header
     background-color:coral;
     padding: 0 15px;
     box-sizing: border-box;
-    z-index: 1000;
-}
-
-header::before{
-    content: "";
-    position: absolute;
-    // top: 0;
-    // left: 0;
-    width: 100px;
-    height: 100px;
-    background-color: deeppink;
 }
 
 .header_content
@@ -188,7 +127,6 @@ header::before{
     list-style-type: none;
 }
 
-.header_burger{}
 
 .description_block
 {
@@ -209,7 +147,7 @@ header::before{
     display: block;
     word-break: break-all;
     margin-top: auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open_sansbold';
     // margin-right: auto;
     h1{
         font-weight: bolder;
@@ -220,8 +158,7 @@ header::before{
         width: 100%;
         margin: 0 auto;
         line-height: 22px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: lighter;
+        font-family: 'open_sansbold', sans-serif;
     }
     
 }
@@ -244,7 +181,6 @@ header::before{
     display: flex;
     width: 100%;
 }
-
 
 .first_form
 {
@@ -464,64 +400,4 @@ a {
 
 .video{
     margin: 1.9em auto 4.1em auto;
-}
-
-.maps_container{
-    width: 100%;
-    max-width: 100%;
-    max-height: 400px;
-    height: 100%;
-}
-
-.contacts_container{
-    width: 100%;
-    background-color: #3498db;
-}
-
-.contacts_content{
-    display: flex;
-    flex-direction: wrap;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1220px;
-    width: 100%;
-    padding: 2.5em 5em;
-}
-
-.contacts_block{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    max-width: 120px;
-    width: 100%;
-
-    p{
-        font-family: "OpenSans-Bold", OpenSans, sans-serif;
-        font-size: 16px;
-        color: white;
-    }
-
-    span{
-        font-family: "OpenSans-Light", OpenSans, sans-serif;
-        font-size: 14px;
-        color: white;
-    }
-
-}
-
-.contacts_icon{
-    height: 100%;
-    max-height: 55px;
-    width: 100%;
-    max-width: 55px;
-    margin: 0 auto 1.25em auto; 
-}
-
-.contacts_mail_icon{
-
-    height: 100%;
-    max-height: 39px;
-    width: 100%;
-    max-width: 50px;
-    margin: 0 auto 1.25em auto; 
 }

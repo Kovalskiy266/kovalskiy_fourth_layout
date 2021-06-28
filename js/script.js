@@ -14,7 +14,35 @@ $(document).ready(function(){
         // fade: true, 
         // waitForAnimate: false
     });
-});
-
-$(document).ready(function(){
     $('.thirth_slider').slick({
+        arrows: false,
+        dots: true,
+        autoplay: true,
+        infinite: true, 
+        autoplaySpeed: 10000,
+        
+    });
+    // $('.first_slider').slick({
+    //     arrows: false,
+    //     dots: false,
+    //     infinite: true,
+      
+    // });
+
+    // if (window.matchMedia("(max-width: 750px)").matches) {
+    //     $('.first_slider').slick({
+    //         arrows: false, 
+    //         dots: true,
+    //         infinite: true,
+    //         autoplay: true
+    //     })
+    // } 
+
+});
+// var sld = function() {
+//     if ($(window).width() > 320) {
+//     $('.slider').bxSlider({
+//     auto: true,
+//     pause: 2000,
+//     autoHover: true
+//     });

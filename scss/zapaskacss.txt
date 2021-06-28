@@ -1,58 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @font-face {
-  font-family: 'open_sans_light';
-  src: url("fonts/OpenSans-Light.woff2") format("woff2"), url("fonts/opensans-light.woff") format("woff"), url("fonts/OpenSans-Light.ttf") format("ttf"), url("fonts/OpenSans-Light.svg") format("svg"), url("fonts/OpenSans-Light.eot") format("eot");
+  font-family: 'open_sanslight';
+  src: url("fonts/opensans-light-webfont.woff2") format("woff2"), url("fonts/opensans-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'open_sans_bold';
-  src: url("fonts/OpenSans-Bold.woff2") format("woff2"), url("fonts/opensans-Bold.woff") format("woff"), url("fonts/OpenSans-Bold.ttf") format("ttf"), url("fonts/OpenSans-Bold.svg") format("svg"), url("fonts/OpenSans-Bold.eot") format("eot");
+  font-family: 'open_sansregular';
+  src: url("fonts/opensans-regular-webfont.woff2") format("woff2"), url("fonts/opensans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'open_sans_regular';
-  src: url("fonts/OpenSans-Regular.woff2") format("woff2"), url("fonts/opensans-Regular.woff") format("woff"), url("fonts/OpenSans-Regular.ttf") format("ttf"), url("fonts/OpenSans-Regular.svg") format("svg"), url("fonts/OpenSans-Regular.eot") format("eot");
+  font-family: 'open_sansbold';
+  src: url("fonts/opensans-bold-webfont.woff2") format("woff2"), url("fonts/opensans-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
+
+  
 @font-face {
-  font-family: 'open_sans_semibold';
-  src: url("fonts/OpenSans-SemiBold.woff2") format("woff2"), url("fonts/opensans-SemiBold.woff") format("woff"), url("fonts/OpenSans-SemiBold.ttf") format("ttf"), url("fonts/OpenSans-SemiBold.svg") format("svg"), url("fonts/OpenSans-SemiBold.eot") format("eot");
+  font-family: 'open_sanssemibold';
+  src: url("fonts/opensans-semibold-webfont.woff2") format("woff2"), url("fonts/opensans-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
-@media (max-width: 1220px) {
-  .container {
-    max-width: 970px; } }
-
-@media (max-width: 992px) {
-  .container {
-    max-width: 750px; }
-  .description_content {
-    display: flex;
-    flex-direction: column; }
-  .description_block {
-    margin: 0 auto;
-    width: 100%; }
-    .description_block .description_text h1 {
-      font-size: 24px;
-      color: darkred;
-      text-align: center;
-      margin: 35px auto 20px auto;
-      padding: 0 20px; }
-    .description_block .description_text p {
-      padding-left: 20px;
-      padding-right: 20px;
-      box-sizing: border-box;
-      width: 100%; } }
-
-@media (max-width: 767px) {
-  .container {
-    max-width: none; }
-    .container .header_content {
-      color: darkgreen; } }
 
 .wrapper {
   display: flex;
@@ -76,15 +46,7 @@ header {
   width: 100%;
   background-color: coral;
   padding: 0 15px;
-  box-sizing: border-box;
-  z-index: 1000; }
-
-header::before {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: deeppink; }
+  box-sizing: border-box; }
 
 .header_content {
   display: flex;
@@ -129,7 +91,7 @@ header::before {
   display: block;
   word-break: break-all;
   margin-top: auto;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "open_sansextrabold_italic"; }
   .description_text h1 {
     font-weight: bolder; }
   .description_text p {
@@ -137,9 +99,7 @@ header::before {
     max-width: 490px;
     width: 100%;
     margin: 0 auto;
-    line-height: 22px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: lighter; }
+    line-height: 22px; }
 
 .description_text h1 {
   color: #333333;
@@ -319,51 +279,3 @@ a {
 
 .video {
   margin: 1.9em auto 4.1em auto; }
-
-.maps_container {
-  width: 100%;
-  max-width: 100%;
-  max-height: 400px;
-  height: 100%; }
-
-.contacts_container {
-  width: 100%;
-  background-color: #3498db; }
-
-.contacts_content {
-  display: flex;
-  flex-direction: wrap;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1220px;
-  width: 100%;
-  padding: 2.5em 5em; }
-
-.contacts_block {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  max-width: 120px;
-  width: 100%; }
-  .contacts_block p {
-    font-family: "OpenSans-Bold", OpenSans, sans-serif;
-    font-size: 16px;
-    color: white; }
-  .contacts_block span {
-    font-family: "OpenSans-Light", OpenSans, sans-serif;
-    font-size: 14px;
-    color: white; }
-
-.contacts_icon {
-  height: 100%;
-  max-height: 55px;
-  width: 100%;
-  max-width: 55px;
-  margin: 0 auto 1.25em auto; }
-
-.contacts_mail_icon {
-  height: 100%;
-  max-height: 39px;
-  width: 100%;
-  max-width: 50px;
-  margin: 0 auto 1.25em auto; }
