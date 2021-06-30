@@ -6,15 +6,19 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/slider.css">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0 ">
     <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src = "js/slick.min.js"></script>
     <script src = "js/script.js"></script>
+    <script src = "js/menu.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    
+   
 </head>
+
+
+
 
  <body>
      <div class="wrapper">
@@ -24,16 +28,47 @@
                     <div>
                         <img src="images/logo_Oxit_2.jpg" alt="" title="" class="logo_oxit">
                     </div>
-                <div class="menu">
+                    
+                    <div class="menu-burger__header">
+                        <img src="images/burger_photo.png", alt="" title="">
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__menu">
+                            <li><a href="" class="menu__item">Головна</a></li>
+                            <li><a href="" class="menu__item">Напиши нам</a></li>
+                            <li><a href="" class="menu__item">Программа курсу</a></li>
+                            <li><a href="" class="menu__item">Відгуки про курс</a></li>
+                            <li><a href="" class="menu__item">Відео</a></li>
+                            <li><span><a href="#description">Подати заяву</a></span></li>
+                        </ul>
+                    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- <div class="header_burger">
+                        <span><img src="images/burger_photo.png" alt="" class="burger_logo"></span>
+                    </div>
+
+                <nav class="menu">
                      <ul>
-                         <li>Головна</li>
+                         <li><a href="">Головна</a></li>
                         <li><a href="#first_slider">Програма курсу</a></li>
-                        <li>ВІдгуки про курс</li>
-                        <li>Відео</li>
-                        <li>Ментори</li>
+                        <li><a href="">ВІдгуки про курс</a></li>
+                        <li><a href="">Відео</a></li>
+                        <li><a>Ментори</a></li>
                         <li><span><a href="#description">Подати заяву</a></span></li>
                     </ul>
-                </div>
+                </nav> -->
                 </div>
                 </div>
         </header>
@@ -80,19 +115,24 @@
         </div>
 
         <!-- ------------------------- -->
-        <div class = first_slider id="first_slider">
+        <div class = container_first_slider id="first_slider">
             <div class="container">
-                    <div class="slider">
+                
+                    <div class="first_slider">
                         <!-- ----------------------- -->
-                        <div class="slider_block">
-                            <div class="center_img">
-                                <img src="images/icons/course-icon-1.png" alt="">
+                        <div class="content_first_slider">
+                            <div class="slider_block">
+                                <div class="center_img">
+                                    <img src="images/icons/course-icon-1.png" alt="">
+                                </div>
+                                <span>Розробка сайтів на WordPress</span>
+                                <div class="line"></div>
+                                <div class="text">Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress навчишся створювати сайти різної складності: від блогів до інтернет магазинів. Всі знання закріпиш за допомогою тестових завдань.</div>
                             </div>
-                            <span>Розробка сайтів на WordPress</span>
-                            <div class="line"></div>
-                            <div class="text">Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress навчишся створювати сайти різної складності: від блогів до інтернет магазинів. Всі знання закріпиш за допомогою тестових завдань.</div>
                         </div>
+
                         <!-- ---------------------------->
+                        <div class="content_first_slider">
                         <div class="slider_block">
                             <div class="center_img">
                                 <img src="images/icons/course-icon-2.png" alt="">
@@ -101,7 +141,9 @@
                             <div class="line"></div>
                             <div class="text"> Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою, ти пізнаєш секрети основних та додаткових Drupal-модулів (Views, Rules, Panels, Devel, Paragraph та багато інших).</div>
                         </div>
+                        </div>
                         <!-- ------------------------- -->
+                        <div class="content_first_slider">
                         <div class="slider_block">
                             <div class="center_img">
                                 <img src="images/icons/course-icon-3.png" alt="">
@@ -109,11 +151,15 @@
                             <span>Ознайомлення з тестуванням</span>
                             <div class="line"></div>
                             <div class="text">Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ.Також QA-спеціаліст розкаже про види тестування(функціональне, регресивне, системне, тестування швидкодії тощо).</div>
-                          <!-- ------------------------- -->
+
                         </div>
+                        </div> 
+                
                     </div>
                 </div>
             </div>
+        </div>
+            
 
 
             <!-- ------------------------- -->
@@ -140,8 +186,10 @@
                             <div class="text_number">836</div>
                             <div class="text">годин занять проведено</div>
                         </div>
-
+                        
                          <!-- --------------------------- -->
+
+                       
 
                          <div class="course_block">
                             <div class="center_img"> 
@@ -161,6 +209,7 @@
                             <div class="text">випускників курсів працевлаштовано</div>
                         
                         </div> 
+                        
                         
                          <!-- --------------------------- -->
                     
@@ -182,8 +231,8 @@
                         <div class="content_second_slider">
                             <div class ="text_second_slider">
                                 <div class="text">
-                                    <img src="images/quote-left-solid.png" alt="" class="left_quote">
-                                    <img src="images/quote-right-solid.png" alt="" class="right_quote">
+                                    <img src="images/left_quote.png" alt="" class="left_quote">
+                                    <img src="images/right_quote.png" alt="" class="right_quote">
                                             <p>  Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу сказати що Drupal та OxIT повністю змінили моє життя.</p>
                             </div>
                         </div>
@@ -195,8 +244,8 @@
                         <div class="content_second_slider">
                             <div class ="text_second_slider">
                                 <div class="text">
-                                    <img src="images/quote-left-solid.png" alt="" class="left_quote">
-                                    <img src="images/quote-right-solid.png" alt="" class="right_quote">
+                                    <img src="images/left_quote.png" alt="" class="left_quote">
+                                    <img src="images/right_quote.png" alt="" class="right_quote">
                                             <p style="color: darkgoldenrod;">  Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу сказати що Drupal та OxIT повністю змінили моє життя.</p>
                             </div>
                         </div>
@@ -208,8 +257,8 @@
                         <div class="content_second_slider">
                             <div class ="text_second_slider">
                                 <div class="text">
-                                    <img src="images/quote-left-solid.png" alt="" class="left_quote">
-                                    <img src="images/quote-right-solid.png" alt="" class="right_quote">
+                                    <img src="images/left_quote.png" alt="" class="left_quote">
+                                    <img src="images/right_quote.png" alt="" class="right_quote">
                                             <p style="color: blue;">Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу сказати що Drupal та OxIT повністю змінили моє життя.</p>
                             </div>
                         </div>
@@ -237,7 +286,9 @@
                         Illum similique impedit distinctio repudiandae veniam sint, iusto asperiores provident! Fuga voluptatibus mollitia quis aut possimus eveniet nam exercitationem vero molestiae ea quisquam dolorem, praesentium, modi veniam vitae perspiciatis delectus!
                     </div>
                     <div class="video">
+                       
                     <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/Cd4Hp6InPNs?autoplay=0&amp;start=0&amp;rel=0" width="1200" height="520" frameborder="0"></iframe>
+                    
                     </div>
                 </div>
                 <div>
