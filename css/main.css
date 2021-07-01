@@ -91,3 +91,27 @@ header::before {
     background-color: gold; }
   .header_content {
     z-index: 1000; } }
+
+.course_main_block {
+  width: 50%;
+  display: flex;
+  justify-content: space-between; }
+
+.course_block {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  color: #ffffff;
+  border: 2px solid red; }
+  .course_block .center_img {
+    margin-bottom: 2.5em; }
+  .course_block .text_number {
+    font-size: 28px;
+    font-weight: bolder;
+    color: #fbfbfc;
+    margin-bottom: 1.3em;
+    text-align: center; }
+  .course_block .text {
+    font-size: 16px;
+    color: #fbfbfc;
+    text-align: center; }

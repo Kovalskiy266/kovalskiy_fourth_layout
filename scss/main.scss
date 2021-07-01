@@ -130,3 +130,39 @@ header::before{
         }
     
     }
+
+
+
+
+
+    .course_main_block{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .course_block{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        color: #ffffff;
+        border: 2px solid red;
+    
+        .center_img{
+            margin-bottom: 2.5em;
+        }
+    
+        .text_number{
+            font-size: 28px;
+            font-weight: bolder;
+            color: #fbfbfc;
+            margin-bottom: 1.3em;
+            text-align: center;
+        }
+    
+        .text{
+            font-size: 16px;
+            color: #fbfbfc;
+            text-align: center;
+        }
+    }
+    

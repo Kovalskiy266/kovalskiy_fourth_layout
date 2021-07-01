@@ -17,6 +17,12 @@
   width: 100%;
   min-width: 0;
   padding-bottom: 3.8em; }
+  .thirth_slider img {
+    max-width: 337px;
+    width: 100%;
+    max-height: 356px;
+    height: 100%;
+    height: auto; }
 
 .container_first_slider {
   width: 100%;
@@ -71,7 +77,6 @@
   text-align: center;
   display: flex;
   min-width: 0;
-  padding-left: 4.4em;
   padding-top: 2.5em; }
 
 .text_second_slider {
