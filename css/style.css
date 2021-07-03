@@ -133,9 +133,9 @@ li a span {
     font-size: 14px;
     line-height: 1.5;
     font-family: "open_sans_light" sans-serif; }
-  .what_say_students {
+  .container .what_say_students {
     font-family: "open_sans_regular", sans-serif;
-    font-size: 24px !important; }
+    font-size: 24px; }
   .course .course_content {
     padding: 40px 30px 10px 30px;
     flex-direction: column; }
@@ -516,8 +516,8 @@ footer {
 
 @media (max-width: 767px) {
   .container {
-    padding-left: 0px !important;
-    padding-right: 0px !important; }
+    padding-left: 0px;
+    padding-right: 0px; }
   .header_content {
     padding-left: 15px;
     padding-right: 15px; }
@@ -559,7 +559,7 @@ footer {
   .description_content {
     padding-right: 15px; }
     .description_content .description_text p {
-      padding-right: 0px !important; }
+      padding-right: 0px; }
   .content_first_slider {
     padding-right: 15px; }
   .first_form h2 {

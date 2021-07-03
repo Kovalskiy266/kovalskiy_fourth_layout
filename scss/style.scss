@@ -222,10 +222,11 @@ li a span{
                         }}}}}
             
         
-        
-        .what_say_students{
-            font-family: "open_sans_regular", sans-serif;
-            font-size: 24px !important;
+        .container {
+            .what_say_students{
+                font-family: "open_sans_regular", sans-serif;
+                font-size: 24px;
+            }
         }
 
         .course{
@@ -748,8 +749,8 @@ footer {
 @media(max-width: 767px){
 
     .container {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .header_content {
@@ -802,7 +803,7 @@ footer {
     .description_content{
         padding-right: 15px;
         .description_text p {
-            padding-right: 0px !important;
+            padding-right: 0px;
         }
     }
 
