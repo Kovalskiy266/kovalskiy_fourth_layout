@@ -6,15 +6,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link href="fonts/stylesheet.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0 ">
     <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src = "js/slick.min.js"></script>
     <script src = "js/script.js"></script>
-    <script src = "js/menu.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-   
 </head>
 
 
@@ -34,12 +31,12 @@
                     </div>
                     <nav class="header__nav">
                         <ul class="header__menu">
-                            <li><a href="" class="menu__item">Головна</a></li>
-                            <li><a href="" class="menu__item">Напиши нам</a></li>
-                            <li><a href="" class="menu__item">Программа курсу</a></li>
-                            <li><a href="" class="menu__item">Відгуки про курс</a></li>
-                            <li><a href="" class="menu__item">Відео</a></li>
-                            <li><span><a href="#description">Подати заяву</a></span></li>
+                            <li><a href="" class="menu__item"><span>Головна</span></a></li>
+                            <li><a href="#first_slider" class="menu__item"><span>Программа курсу</span></a></li>
+                            <li><a href="#course_reviews" class="menu__item"><span>Відгуки про курс</span></a></li>
+                            <li><a href="#video_link" class="menu__item"><span>Відео</span></a></li>
+                            <li><a href="#mentors" class="menu__item"><span>Ментори</span></a></li>
+                            <li><a href="#description" class="button_li">Подати заяву</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -53,7 +50,6 @@
                         <div class="description_text">
                             <h1>Курси програмування у Луцьку</h1>
                                 <p>Сфера IT розвивається максимально швидко. Зараз дуже популярно здобувати освіту, що пов'язана з IT. Існує лише одна проблема-брак дійсно кваліфікованих спеціалістів в Україні. Під час навчання в університеті ми отримуємо мало практики і "живих" реальних кейсів. IT школа OxIT створила таку методику навчання, при якій за короткий час ви отримаєте необхідні знання, щоб стати IT спеціалістом. Чекаємо вас на наших курсах з програмування в Луцьку. Старт наступного курсу 3 серпня.</p>
-                        <!-- <img src="images/viktor.png">    -->
                         </div>
                         </div>
                         <div class="first_form">
@@ -82,13 +78,13 @@
         </div>
         </div>
 
-        <div class="slider_title">
+        <div class="slider_title"  id="first_slider">
             <div class="title">Курс «Розробка сайтів»</div>
         </div>
         </div>
 
         <!-- ------------------------- -->
-        <div class = container_first_slider id="first_slider">
+        <div class = "container_first_slider">
             <div class="container">
                     <div class="first_slider">
                         <!-- ----------------------- -->
@@ -126,6 +122,7 @@
 
                         </div>
                         </div> 
+
                 
                     </div>
                 </div>
@@ -193,7 +190,7 @@
             <!-- ----------------------------------------------------- -->
             <div class="container_what_say_students">
                 <div class="container">
-                    <div class="what_say_students">
+                    <div class="what_say_students" id="course_reviews">
                         Що кажуть студенти наших курсів:
                     </div>
                 </div>
@@ -207,7 +204,7 @@
                                 <div class="text">
                                     <img src="images/left_quote.png" alt="" class="left_quote">
                                     <img src="images/right_quote.png" alt="" class="right_quote">
-                                            <p>  Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу сказати що Drupal та OxIT повністю змінили моє життя.</p>
+                                    <p>Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу сказати що Drupal та OxIT повністю змінили моє життя.</p>
                             </div>
                         </div>
                             <div class="name_student">
@@ -220,11 +217,11 @@
                                 <div class="text">
                                     <img src="images/left_quote.png" alt="" class="left_quote">
                                     <img src="images/right_quote.png" alt="" class="right_quote">
-                                            <p style="color: darkgoldenrod;">  Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу сказати що Drupal та OxIT повністю змінили моє життя.</p>
+                                            <p>Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу сказати що Drupal та OxIT повністю змінили моє життя.</p>
                             </div>
                         </div>
                             <div class="name_student">
-                                <p><b>Коля</b><br><span>Drupal-девелопер</span></p>
+                                <p><b>Коля №2</b><br><span>Drupal-девелопер</span></p>
                             </div>
                         </div>
                         <!-- ----------------------------------------------- -->
@@ -233,18 +230,18 @@
                                 <div class="text">
                                     <img src="images/left_quote.png" alt="" class="left_quote">
                                     <img src="images/right_quote.png" alt="" class="right_quote">
-                                            <p style="color: blue;">Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу сказати що Drupal та OxIT повністю змінили моє життя.</p>
+                                            <p>Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder. Зараз я можу сказати що Drupal та OxIT повністю змінили моє життя.</p>
                             </div>
                         </div>
                             <div class="name_student">
-                                <p><b>Коля</b><br><span>Drupal-девелопер</span></p>
+                                <p><b>Коля №3</b><br><span>Drupal-девелопер</span></p>
                             </div>
                         </div>
                 </div>
             </div>
 
             <!-- -------------------ВІДЕО-------------------------->
-            <div class="video_container">
+            <div class="video_container" id="video_link">
                 <div class="container">
                     <div class="video_content">
                     <div class="video_title">
@@ -259,10 +256,11 @@
                         Ullam vel inventore fuga quas excepturi explicabo! Accusantium mollitia autem reiciendis quisquam omnis ex distinctio aliquid, illum eveniet ab molestias eius quasi esse ad. Numquam magni ipsum architecto distinctio accusamus.
                         Illum similique impedit distinctio repudiandae veniam sint, iusto asperiores provident! Fuga voluptatibus mollitia quis aut possimus eveniet nam exercitationem vero molestiae ea quisquam dolorem, praesentium, modi veniam vitae perspiciatis delectus!
                     </div>
+
+                    <!-- Якшо не відкриється у мозілі, то значить треба встановити adobe flashplayer -->
                     <div class="video">
-                       
-                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/Cd4Hp6InPNs?autoplay=0&amp;start=0&amp;rel=0" width="1200" height="520" frameborder="0"></iframe>
-                    
+                    <iframe allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/N0QblwXyXvo" width="1200" height="520" frameborder="0"></iframe>
+                    <!-- <iframe width="1020" height="520" src="https://www.youtube.com/embed/JzitUykYAuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     </div>
                 </div>
                 <div>
@@ -272,7 +270,7 @@
             <!------------------------------------------------------>
 
             <!-- -------------Наші ментори заголовок--------------------- -->
-            <div class="our_mentors_title_container">
+            <div class="our_mentors_title_container" id="mentors">
                 <div class="container">
                     <div class="our_mentors_title">
                         Наші ментори
@@ -353,7 +351,7 @@
                         <div class="contacts_block">
                             <img src="images/icons/phone_icon.png" class = "contacts_icon">
                             <p>Телефон</p>
-                            <span>+38 067 332 17 55</span>
+                            <span><a href="#">+38 067 332 17 55</a></span>
                         </div>
                         <!-------------------------------------->
                         <div class="contacts_block">
@@ -367,14 +365,14 @@
                         <!--------------------------------------->
                         <div class="contacts_block">
                             <img src="images/icons/location_icon.png" class = "location_img">
-                            <p>Телефон</p>
-                            <span>+38 067 332 17 55</span>
+                            <p>Адреса</p>
+                            <span>вулю Боженка 34г,Луцьк</span>
                         </div>
                         <!--------------------------------------->
                         <div class="contacts_block">
                             <img src="images/icons/facebook_icon.png" class = "facebook_img">
-                            <p>Телефон</p>
-                            <span>+38 067 332 17 55</span>
+                            <p>Facebook</p>
+                            <span><a href="#">facebook.com/oxitschool</a></span>
                         </div>
                         <!-------------------------------------->
                     </div>
@@ -382,7 +380,17 @@
             </div>
             </div>
             <!-------- ----------------------------------- -->
-          
+        
+        <footer>
+            <div class="container">
+                <div class="footer_content">
+                    <p><span>©&nbsp; Copyright&nbsp;2018-2021 Internet Devels</span></p>
+                    <p><a href="#">Умови політики та конфіденційності</a></p>
+                   
+                </div>
+            </div>
+        </footer>
+        
         </div>
         </body>
      </html>

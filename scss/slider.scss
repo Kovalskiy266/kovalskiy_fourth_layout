@@ -2,12 +2,11 @@
     width: 100%;
     position: relative;
     display: block;
+    text-align: center;
 }
 
 .content_first_slider{
-    text-align: center;
     display: flex;
-    justify-content: space-around;
     padding-left: 15px;
     min-width: 0;
 }
@@ -50,13 +49,13 @@
     flex-direction: column;
     max-width: 346px;
     width: 100%;
-    // border: 2px solid red;
     margin: 0 auto;
     span {
-        font-size: 24px;
-        font-weight: bold;
-        color: #686868;
+        font-size: 22px;
+        color: #666;
         margin-top: 1.85em;
+        font-family: "open_sans_regular", sans-serif;
+
     }
     .line{
         max-width: 346px;
@@ -72,11 +71,11 @@
 
     .text{
         font-size: 16px;
-        font-family: sans-serif;
+        font-family: "open_sans-light", sans-serif;
         padding: 0px 20px;
         text-align: center;
         line-height: 22px;
-        color: #c7c7c7;
+        color: #888888;
     }
 
 }
@@ -90,19 +89,26 @@
     padding-bottom: 6.9em;
     padding-top: 1.6em;
     z-index: -100;
+    b{
+        font-family: "open_sans_regular", sans-serif;
+    }
+    span {
+        font-family: "open_sans_regular", sans-serif;
+        font-style: italic;
+        color:#bbbbbb;
+    }
 }
 
 .content_thirth_slider{
     text-align: center;
     display: flex;
     min-width: 0;
-    // padding-left: 4.4em;
     padding-top: 2.5em;
 }
 
 .text_second_slider{
     font-size: 16px;
-    color: brown;
+    font-family: "open_sans_regular", sans-serif;
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
@@ -112,15 +118,22 @@
     }
     
     .name_student{
-        // margin-top: 2.5em;
+        b{
+            font-family: "open_sans_regular", sans-serif;
+        }
         text-align: center;
         color: #636363;
-        span {
 
+        p{
+            font-family: "open_sans_regular", sans-serif;
+        }
+        span {
+            font-family: "open_sans_regular", sans-serif;
             font-style: italic;
             color:#bbbbbb;
         }
     }
+
     .text{
 
         width: 100%;
@@ -130,6 +143,7 @@
         p{
             max-width: 880px;
             width: 100%;
+            font-family: "open_sans_light", sans-serif;
             margin: 0 auto;
             font-size: 22px;
             text-align-last: center;
@@ -138,7 +152,6 @@
 
         .left_quote {
             float: left;
-            // background-color: #c4c4c4;
             margin-top: -1.2em;
             max-width: 35px;
             max-height: 35px;
@@ -151,8 +164,6 @@
             margin-bottom: -0.7em;
             max-width: 35px;
             max-height: 35px;
-            // width: 100%;
-            // height: 100%; 
         }
 
       
@@ -172,7 +183,7 @@
     color: #333;
     text-align: center;
     margin: 0 auto;
-    font-family: "OpenSans-Regular", OpenSans, sans-serif;;
+    font-family: "open_sans-regular", sans-serif;;
 }
 
 .our_mentors_container{
@@ -183,12 +194,13 @@
 
 .text_thirth_slider{
     line-height: 1.6;
-    font-family: "OpenSans-Light", OpenSans, sans-serif;
+    font-family: "open_sans-light", sans-serif;
     font-size: 16px;
     display: flex;
     flex-direction: column;
     color: #888;
     margin-left: 100px;
+    
 
     .line {
         max-width: 670px;
@@ -198,7 +210,6 @@
         margin-bottom: 1.3em;
     }
     p{
-        // float: left;
         text-align: left;
         margin: 0 0 10px;
         max-width: 670px;
@@ -209,7 +220,7 @@
 .name_mentors{
     margin-right: auto;
     margin-bottom: 10px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "open_sans_regular", sans-serif;
     font-weight: bold;
     font-size: 20px;
     color: #3498db;
@@ -227,10 +238,7 @@
 }
 
 .slick-arrow
-{
-    // display: none;
-    // font-size: 0;
-}
+{}
 
  .slick-arrow.slick-prev
 {
@@ -254,14 +262,11 @@
 
 .slick-dots li button{}
 
-
-
-
-// Точки до другого слайдера
 .second_slider .slick-dots{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -40px;
 }
 
 .second_slider .slick-dots li{
@@ -310,6 +315,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -40px;
 }
 
 .first_slider .slick-dots li{

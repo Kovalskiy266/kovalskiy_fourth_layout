@@ -22,7 +22,7 @@
   
   body {
     margin: 0;
-    font-family: "OpenSans-Regular", OpenSans, sans-serif;
+    /* font-family: "open_sans_regular", sans-serif; */
     /* background-color: brown; */
   }
   
@@ -349,3 +349,23 @@
   [hidden] {
     display: none;
   }
+
+
+
+
+  .button_li{
+    width: 144px;
+    margin-top: -105px;
+    display: inline-block;
+    text-align: center;
+    background-color: #337ab7;
+    color: white;
+    a {
+        color: white;
+    }
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 11.5px 20px;
+    cursor: pointer;
+
+}

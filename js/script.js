@@ -1,8 +1,3 @@
-//Другий слайдер
-
-// var screen = window.matchMedia("(max-width:850px)");
-// console.log(screen)
-
 
 $(document).ready(function(){
 
@@ -12,13 +7,7 @@ $(document).ready(function(){
         autoplay: true,
         infinite: true, 
         autoplaySpeed: 10000,
-        // pauseOnHover: false,
         fade: true
-        // draggable: false,
-        // pauseOnFocus: false,
-        // pauseOnDotsHover: false,
-        // fade: true, 
-        // waitForAnimate: false
     });
 
     $('.thirth_slider').slick({
@@ -35,62 +24,40 @@ $(document).ready(function(){
         $('.header__nav').toggleClass('open-menu');
         $('body').toggleClass('fixed-page');
     });
-    // $('.menu-burger__header').click(function() {
-    //     $('.menu-burger__header').toggleClass('open-menu');
-    // });
 
     $('.first_slider').slick({
-        
-        // autoplay:true,
         arrows: false,
         dots: false,
-        // speed: 300,
         infinite: true,
         slidesToShow: 3,
+        centerMode: true,
         responsive:[
             {
                 breakpoint: 851,
                 settings: {
+                    autoplay:true,
                     dots: true,
                     arrows: false,
                     slidesToShow:2,
                     infinite: true,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '10px'
                 }
             },
             {
             breakpoint: 600,
             settings: {
+                autoplay:true,
                 dots: true,
                 arrows: false,
                 slidesToShow:1,
                 infinite: true,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                centerPadding: '10px'
             }
         }
-
-
         ]
         })
 });
 
-
-
-
- // $('.gamburger').click(function(){
-    //     $('.menu').toggleClass('menu-active');
-    // });
-
-    // $('.menu a').click(function() {
-
-    //     $('.menu').removeClass('menu-active');
-    
-    // });
-
-// var sld = function() {
-//     if ($(window).width() > 320) {
-//     $('.slider').bxSlider({
-//     auto: true,
-//     pause: 2000,
-//     autoHover: true
-//     });

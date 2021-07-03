@@ -1,51 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-@font-face {
-  font-family: 'open_sans_light';
-  src: url("fonts/OpenSans-Light.woff2") format("woff2"), url("fonts/opensans-light.woff") format("woff"), url("fonts/OpenSans-Light.ttf") format("ttf"), url("fonts/OpenSans-Light.svg") format("svg"), url("fonts/OpenSans-Light.eot") format("eot");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'open_sans_bold';
-  src: url("fonts/OpenSans-Bold.woff2") format("woff2"), url("fonts/opensans-Bold.woff") format("woff"), url("fonts/OpenSans-Bold.ttf") format("ttf"), url("fonts/OpenSans-Bold.svg") format("svg"), url("fonts/OpenSans-Bold.eot") format("eot");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'open_sans_regular';
-  src: url("fonts/OpenSans-Regular.woff2") format("woff2"), url("fonts/opensans-Regular.woff") format("woff"), url("fonts/OpenSans-Regular.ttf") format("ttf"), url("fonts/OpenSans-Regular.svg") format("svg"), url("fonts/OpenSans-Regular.eot") format("eot");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'open_sans_semibold';
-  src: url("fonts/OpenSans-SemiBold.woff2") format("woff2"), url("fonts/opensans-SemiBold.woff") format("woff"), url("fonts/OpenSans-SemiBold.ttf") format("ttf"), url("fonts/OpenSans-SemiBold.svg") format("svg"), url("fonts/OpenSans-SemiBold.eot") format("eot");
-  font-weight: normal;
-  font-style: normal; }
-
 .header__nav {
   display: block; }
 
 .header__menu {
   display: flex;
-  font-family: "OpenSans-Regular", OpenSans, sans-serif;
+  font-family: "open_sans_regular", sans-serif;
   left: 0;
   z-index: 2;
   width: 100%; }
-  .header__menu span {
-    background-color: #337ab7;
-    color: white;
-    border-radius: 10px;
-    padding: 11.5px 20px;
-    cursor: pointer; }
-    .header__menu span a {
-      color: white; }
 
 .header__menu li {
   list-style: none;
-  margin-left: 20px;
-  font-size: 16px;
-  font-family: "OpenSans-Regular", OpenSans, sans-serif;
+  font-size: 14px;
+  font-family: "open_sans_regular",sans-serif;
   color: #adc4d7;
   text-transform: uppercase;
   text-decoration: none; }
@@ -56,60 +22,20 @@
   display: none; }
 
 .header__menu ul {
-  font-family: "OpenSans-Regular", OpenSans, sans-serif; }
+  font-family: "open_sans_regular", sans-serif; }
 
-header li a {
-  color: #6f6a91; }
-
-@media (max-width: 767px) {
-  .container {
-    padding-left: 0px !important;
-    padding-right: 0px !important; }
-  .header_content {
-    padding-left: 15px;
-    padding-right: 15px; }
-  .header__nav {
-    display: block;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    background: #645e5e;
-    box-shadow: #ccc;
-    width: 100%;
-    transition: all 0.4s ease;
-    left: -110%; }
-  .header__menu {
-    display: block;
-    background-color: #ffffff;
-    width: 90%; }
-  .header__nav.open-menu {
-    left: 0;
-    padding-top: -20px;
-    background-color: #ffffff; }
-  .header__menu li {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: -15%;
-    text-align: center;
-    font-family: "OpenSans-Regular", OpenSans, sans-serif;
-    font-size: 14px;
-    color: #666; }
-  .header__menu ul {
-    text-align: center;
-    align-items: center;
-    font-family: "OpenSans-Regular", OpenSans, sans-serif; }
-  .menu-burger__header {
-    position: relative;
-    width: 40px;
-    height: 35px;
-    display: block;
-    margin-left: 10px; }
-  .description_content {
-    padding-right: 15px; }
-    .description_content .description_text p {
-      padding-right: 0px !important; }
-  .content_first_slider {
-    padding-right: 15px; } }
+li a span {
+  color: #6f6a91;
+  margin-left: 15px;
+  margin-right: 15px; }
+  li a span:hover:first-child {
+    color: #349ae0;
+    background-color: #eeeeee;
+    padding: 5px;
+    transform: scale(1.1);
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px; }
 
 @media (max-width: 1220px) {
   .container {
@@ -129,8 +55,9 @@ header li a {
     .description_block .description_text {
       margin: 0 auto; }
       .description_block .description_text h1 {
-        font-size: 24px;
-        color: darkred;
+        font-size: 22px;
+        font-family: "open_sans_regular", sans-serif;
+        color: #333;
         text-align: center;
         margin: 35px auto 20px auto;
         padding: 0 20px; }
@@ -158,9 +85,7 @@ header li a {
       text-align: center;
       margin: 0 auto; }
     .content_thirth_slider img {
-      margin: 0 auto; }
-    .content_thirth_slider .text_thirth_slider {
-      margin-left: 0; } }
+      margin: 0 auto; } }
 
 @media (max-width: 615px) {
   .first_form form input {
@@ -186,8 +111,6 @@ header li a {
     max-width: none;
     padding-left: 0px;
     padding-right: 0px; }
-    .container .header_content {
-      color: darkgreen; }
   .second_slider .text {
     padding-left: 15px;
     padding-right: 15px;
@@ -204,25 +127,28 @@ header li a {
     padding-right: 15px; }
   .first_form input[type=submit] {
     margin-left: 10px; }
-  .text_second_slider .text p {
-    font-size: 14px !important;
-    line-height: 1.5; }
+  .content_thirth_slider .text_thirth_slider {
+    margin-top: 25px; }
+  .second_slider .content_second_slider .text_second_slider .text p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "open_sans_light" sans-serif; }
   .what_say_students {
-    font-family: "OpenSans-Regular", OpenSans, sans-serif;
+    font-family: "open_sans_regular", sans-serif;
     font-size: 24px !important; }
-  .course_content {
-    padding: 40px 30px 10px 30px !important;
+  .course .course_content {
+    padding: 40px 30px 10px 30px;
     flex-direction: column; }
-    .course_content .course_main_block {
+    .course .course_content .course_main_block {
       width: 100%; }
-    .course_content .course_main_block {
+    .course .course_content .course_main_block {
       margin-bottom: 30px; }
-    .course_content .course_block img {
+    .course .course_content .course_block img {
       width: 75px;
       height: 62px; }
-    .course_content .course_block .center_img {
+    .course .course_content .course_block .center_img {
       margin-bottom: 20px; }
-    .course_content .course_block .text_number {
+    .course .course_content .course_block .text_number {
       margin-bottom: 15px; }
   .contacts_container .contacts_content {
     flex-direction: column;
@@ -314,21 +240,27 @@ header {
   display: block;
   word-break: break-all;
   margin-top: auto;
-  font-family: 'Open Sans', sans-serif; }
+  color: #666;
+  font-family: 'open_sans_regular', sans-serif; }
   .description_text h1 {
     font-weight: bolder; }
   .description_text p {
-    font-size: 18px;
+    font-size: 16px;
     max-width: 490px;
     width: 100%;
     margin: 0 auto;
     line-height: 32px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: lighter; }
+    font-family: 'open_sans_regular', sans-serif;
+    font-weight: lighter;
+    color: #666;
+    letter-spacing: 0.6px;
+    font-weight: 300;
+    text-align: center; }
 
 .description_text h1 {
   color: #333333;
-  font-size: 36px; }
+  font-size: 32px;
+  margin-left: 20px; }
 
 .description {
   width: 100%;
@@ -345,6 +277,18 @@ form {
   max-width: 590px;
   width: 100%;
   margin: 0 auto; }
+  form input {
+    max-width: 95%;
+    width: 95%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    box-sizing: border-box; }
+  form input:focus {
+    border: 1px solid transparent;
+    box-shadow: 0 0 6px dodgerblue;
+    outline-color: #ffffff; }
 
 .first_form {
   margin-left: auto;
@@ -356,24 +300,22 @@ form {
     text-decoration: none; }
   .first_form span {
     color: red; }
-  .first_form input {
-    max-width: 95%;
-    width: 95%;
-    padding: 15px;
-    font-size: 16px;
-    border-radius: 10px;
-    border: 1px solid #d8d8d8;
-    box-sizing: border-box; }
   .first_form input[type=checkbox] {
     float: left;
     width: auto;
     margin-top: auto; }
   .first_form h2 {
+    font-family: 'open_sans_regular', sans-serif;
     font-weight: bolder;
-    font-size: 18px; }
+    font-style: normal;
+    font-size: 22px; }
   .first_form p {
     margin-bottom: 0.5em;
-    color: none; }
+    color: none;
+    display: block;
+    font-family: "open_sans_light", sans-serif;
+    font-size: 16px;
+    color: #666; }
   .first_form .checkbox {
     margin-top: 1.4em; }
   .first_form input[type=submit] {
@@ -381,11 +323,8 @@ form {
     color: white;
     border-radius: 30px;
     max-width: 368px;
-    margin: 2.5em auto 1.5em auto;
+    margin: 2.5em 0px 1.5em 100px;
     cursor: pointer; }
-  .first_form input:focus {
-    border: 10px transparent red;
-    border-color: forestgreen; }
 
 a {
   color: white;
@@ -430,20 +369,22 @@ a {
     margin-bottom: 2.5em; }
   .course_block .text_number {
     font-size: 28px;
-    font-weight: bolder;
     color: #fbfbfc;
     margin-bottom: 1.3em;
-    text-align: center; }
+    text-align: center;
+    font-family: "open_sans_light", sans-serif; }
   .course_block .text {
     font-size: 16px;
     color: #fbfbfc;
-    text-align: center; }
+    text-align: center;
+    font-family: "open_sans_light", sans-serif; }
 
 .container_second_slider {
   width: 100%;
   background-color: #ffffff; }
 
 .what_say_students {
+  font-family: "open_sans_regular", sans-serif;
   margin: 0 auto;
   text-align: center;
   color: #333333;
@@ -472,9 +413,14 @@ a {
   color: #333;
   font-size: 34px;
   margin: 0 auto;
-  margin-bottom: 1.6em; }
+  margin-bottom: 1.6em;
+  font-family: "open_sans-regular", sans-serif; }
 
 .video_text {
+  font-family: "open_sans_light", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto; }
@@ -509,11 +455,11 @@ a {
   flex-direction: column;
   width: 100%; }
   .contacts_block p {
-    font-family: "OpenSans-Bold", OpenSans, sans-serif;
+    font-family: "open_sans_bold", sans-serif;
     font-size: 16px;
     color: white; }
   .contacts_block span {
-    font-family: "OpenSans-Light", OpenSans, sans-serif;
+    font-family: "open_sans_light", sans-serif;
     font-size: 14px;
     color: white; }
 
@@ -549,3 +495,136 @@ a {
   width: 50px;
   height: 37px;
   margin: 0 auto 2.4em auto; }
+
+footer {
+  background-color: #f7f7f7;
+  width: 100%; }
+  footer .footer_content {
+    max-width: 1220px;
+    padding: 50px 15px 34px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+  footer span {
+    font-family: "open_sans-light", sans-serif;
+    font-size: 16px;
+    color: #337ab7; }
+  footer a {
+    color: #666; }
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+  .header_content {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .header__nav {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background: #645e5e;
+    box-shadow: #ccc;
+    width: 100%;
+    transition: all 0.4s ease;
+    left: -110%; }
+  .header__menu {
+    display: block;
+    background-color: #ffffff;
+    width: 90%; }
+  .header__nav.open-menu {
+    left: 0;
+    padding-top: -20px;
+    background-color: #ffffff; }
+  .header__menu li {
+    margin-bottom: 30px;
+    margin-left: -15%;
+    text-align: center;
+    font-family: "open_sans_regular", sans-serif;
+    font-size: 14px;
+    color: #666; }
+  .header__menu ul {
+    text-align: center;
+    align-items: center;
+    font-family: "open_sans_regular", sans-serif; }
+  .menu-burger__header {
+    position: relative;
+    width: 40px;
+    height: 35px;
+    display: block;
+    margin-left: 10px; }
+  .description_content {
+    padding-right: 15px; }
+    .description_content .description_text p {
+      padding-right: 0px !important; }
+  .content_first_slider {
+    padding-right: 15px; }
+  .first_form h2 {
+    font-family: "open_sans_regular",sans-serif;
+    font-size: 22px;
+    color: #333; }
+  .first_form p {
+    font-size: 14px; }
+  .first_form label {
+    font-size: 14px; }
+  .first_form a {
+    font-size: 14px; }
+  .first_form input[type=checkbox] {
+    margin-top: 10px; }
+  .first_form input[type=submit] {
+    margin-left: 40px; }
+  .description_text {
+    overflow: break-all; }
+    .description_text p {
+      font-size: 14px;
+      text-align: center;
+      overflow: break-all; }
+  .title {
+    color: gold;
+    font-size: 24px;
+    font-family: "open_sans_regular", sans-serif;
+    font-size: 24px;
+    color: #333; }
+  .content_first_slider .slider_block .line {
+    margin-top: 0px; }
+  .content_thirth_slider .text_thirth_slider {
+    text-align: center;
+    margin-left: 0; }
+  .course_block {
+    word-break: break-all; }
+    .course_block .text {
+      font-size: 14px; } }
+
+@media (max-width: 480px) {
+  .thirth_slider .content_thirth_slider img {
+    max-width: 150px; }
+  .description_block {
+    padding-bottom: 0px; }
+  .first_form input[type=submit] {
+    margin-left: 5px; }
+  .first_form h2 {
+    font-size: 20px;
+    letter-spacing: 0.6px; }
+  .course .course_content {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .course .course_content .course_block .text {
+      font-size: 12px; } }
+
+.button_li {
+  width: 146px;
+  margin-top: -105px;
+  display: inline-block;
+  text-align: center;
+  background-color: #337ab7;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 11.5px 20px;
+  cursor: pointer;
+  margin-left: 10px; }
+  .button_li a {
+    color: white; }
